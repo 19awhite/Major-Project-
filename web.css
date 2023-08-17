@@ -11,21 +11,22 @@ a {
   }
   
   .container {
-    max-width: 1200px;
     margin: 0 auto;
     border: none;
   }
   
   /* Navigation styles */
   header {
-    background-color: #425b9a;
     color: #fff;
-    max-height:40px;
+    height:40px;
+    padding: 0px;
+    border: none;
   }
   
   .nav {
     justify-content: space-between;
     background-color: #425b9a;
+    border: none;
 
   }
   
@@ -85,4 +86,51 @@ a {
     .nav ul li {
       margin-left: 50px;
     }
+  }
+
+  .hero {
+    padding: 0px;
+    max-width: 300px;
+    max-height: 300px;
+  }
+
+  .gallery {
+    color: black;
+    display: fixed;
+    align-items: center;
+    padding: 100px;
+    padding-left: 350px;
+
+  }
+
+  .contact {
+    display: flex;
+    align-items:center;
+    padding: 100px;
+    max-width: fit-content;
+    padding-top: 150px;
+  }
+
+  .contactrow1 {
+    align-self:flex-start;
+    order:0;
+    max-width: 100px;
+    padding-right: 100px;
+    padding-left: 300px;
+  }
+
+  .contactrow2 {
+    order:1;
+    align-self: auto;
+    max-width: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
+  }
+
+  .contactrow3 {
+    align-self: flex-end;
+    order:2;
+    max-width: 100px;
+    padding-right: 100px;
+    padding-bottom: 155px;
   }
