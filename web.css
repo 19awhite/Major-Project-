@@ -8,6 +8,7 @@ a {
   /* Global styles */
   body {
     font-family: 'Bitter', serif;
+  
   }
   
   .container {
@@ -19,8 +20,7 @@ a {
   header {
     color: #fff;
     height:40px;
-    padding: 0px;
-    border: none;
+    
   }
   
   .nav {
@@ -88,10 +88,53 @@ a {
     }
   }
 
-  .hero {
-    padding: 0px;
-    max-width: 300px;
-    max-height: 300px;
+  /* The hero image */
+  .hero-img {
+    /* Use "linear-gradient" to add a darken background effect to the image. This will make the text easier to read */
+    background-image: linear-gradient(rgba(94, 88, 255, 0.2), rgba(34, 14, 99, 0.5)), url("heroimg.jpeg");
+    /* Set a specific height */
+    height: auto;
+    width: auto;
+    padding: 100px;
+    padding-top: 250px;
+    padding-bottom: 250px;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* place text in middle of hero img */
+
+  .hero-text {
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-bottom: 30px;
+    
+  }
+
+  .section2 {
+    padding-top: 640px;
+    
+  }
+
+  .section2-content {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    align-items: center; /* Vertically align content */
+    justify-content: space-between; /* Create space between text and image */
+    width: 600px;
+  }
+
+  .section2img {
+    width: 100px;
+    height: 100px;
+    align-items: right;
   }
 
   .gallery {
@@ -100,7 +143,6 @@ a {
     align-items: center;
     padding: 100px;
     padding-left: 350px;
-
   }
 
   .contact {
@@ -134,3 +176,5 @@ a {
     padding-right: 100px;
     padding-bottom: 155px;
   }
+
+  
